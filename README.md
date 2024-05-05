@@ -259,6 +259,6 @@ tf.keras.losses.CategoricalCrossentropy(
 
 # Sources:
 
-- [Pytorch Loss Functions](https://pytorch.org/docs/stable/nn.html#loss-functions)
-- [TensorFlow Loss Functions](https://www.tensorflow.org/api_docs/python/tf/keras/Loss)
+- [Pytorch Loss Functions Documentation](https://pytorch.org/docs/stable/nn.html#loss-functions)
+- [TensorFlow Loss Functions Documentation](https://www.tensorflow.org/api_docs/python/tf/keras/Loss)
 - [Other Info](https://towardsdatascience.com/common-loss-functions-in-machine-learning-46af0ffc4d23)
