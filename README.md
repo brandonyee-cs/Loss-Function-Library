@@ -6,7 +6,7 @@ A library of loss functions to use on your supervised learning models.
 
 In machine learning, loss functions serve as a way to determine how accurate your model's predictions(x) are compared to the labeled data(y) to quantify how happy you are with your parameters(W). However, there isn't a single loss function that works for all algorithms. Selecting a loss function for a given problem involves a number of considerations, including the machine learning method of choice, the simplicity of the derivative calculations, and, to some extent, the proportion of outliers in the data set.
 
-Generally speaking, loss functions fall into two main groups based on the kind of learning job we are working on: regression losses and classification losses. In classification, we attempt to forecast the result of a set of finite categorical values, i.e., classifying a big data set of images handwritten digits into one of nine possible categories.Conversely, regression is concerned with forecasting a continuous value, such as a particular floor area, number of rooms, or size of rooms, and predicts the room's price.
+Generally speaking, loss functions fall into two main groups based on the kind of learning job we are working on regression losses and classification losses. In classification, we attempt to forecast the result of a set of finite categorical values, i.e., classifying a big data set of images handwritten digits into one of nine possible categories. Conversely, regression is concerned with forecasting a continuous value, such as a particular floor area, number of rooms, or size of rooms, and predicts the room's price.
 
 **Note for Formulas and Code**
 
@@ -112,7 +112,7 @@ Mathematical Formula:
 
 <img><img src='Resources/MBE.jpg'>
 
-In the field of machine learning, this occurs far less frequently than its equivalent. The main distinction between this and MSE is that we don't use absolute values. Given that positive and negative errors may cancel each other out, vigilance is obviously warranted. It could identify if the model has positive or negative bias, even though it would be less accurate in practice.
+In the field of machine learning, this occurs far less frequently than its equivalent. The main distinction between this and MSE is that we don't use absolute values. Given that positive and negative errors may cancel each other out, vigilance is obviously warranted. It could identify if the model has a positive or negative bias, even though it would be less accurate in practice.
 
 ### Implementation 
 
@@ -160,11 +160,11 @@ Mathematical Formula:
 
 <img><img src='Resources/SVM.jpg'>
 
-In the field of machine learning, this occurs far less frequently than its equivalent. The main distinction between this and MSE is that we don't use absolute values. Given that positive and negative errors may cancel each other out, vigilance is obviously warranted. It could identify if the model has positive or negative bias, even though it would be less accurate in practice.
+In the field of machine learning, this occurs far less frequently than its equivalent. The main distinction between this and MSE is that we don't use absolute values. Given that positive and negative errors may cancel each other out, vigilance is obviously warranted. It could identify if the model has a positive or negative bias, even though it would be less accurate in practice.
 
-Consider an example where we have three training examples and three classes to predict — Dog, cat and horse. Below the values predicted by our algorithm for each of the classes:
+Consider an example where we have three training examples and three classes to predict — Dog, cat, and horse. Below are the values predicted by our algorithm for each of the classes:
 
-<img><img src='Resources/SVM_example.jpg>
+<img><img src='Resources/SVM_example.jpg'>
 
 ### Implementation 
 
@@ -205,13 +205,13 @@ tf.keras.losses.hinge(
 )
 ```
 
-## Cross Entrop Loss/Negative Log Likelihood
+## Cross Entropy Loss/Negative Log Likelihood
 
 Mathematical Formula:
 
 <img><img src='Resources/CEL.jpg'>
 
-Observe that the function's second half vanishes when the actual label is 1 (y(i) = 1), whereas the first half is dropped off when the actual label is 0 (y(i) = 0). To put it succinctly, we are simply multiplying the ground truth class's actual projected probability by its log. Crucially, this means that predictions that are confident but incorrect are substantially penalized by cross entropy loss. 
+Observe that the function's second half vanishes when the actual label is 1 (y(i) = 1), whereas the first half is dropped off when the actual label is 0 (y(i) = 0). To put it succinctly, we are simply multiplying the ground truth class's actual projected probability by its log. Crucially, this means that predictions that are confident but incorrect are substantially penalized by cross-entropy loss. 
 
 ### Implementation 
 
